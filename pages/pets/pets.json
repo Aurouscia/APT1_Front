@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabbar":"../../tabbar",
+    "my_ads":"../../ads_pets"
+  },
+  "navigationBarTitleText": "宠物列表"
+}

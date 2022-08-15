@@ -1,0 +1,8 @@
+<!--pages/appResult/appResult.wxml-->
+<view class="imgView">
+  <image class="img" mode="aspectFit" src="{{success==1?'./static/success.png':'./static/failure.png'}}"/>
+</view>
+<view class="message">{{message}}</view>
+<view class="moreInfo">{{moreInfo}}</view>
+<button class="btn" bindtap="another">再约一个</button>
+<button class="btn" bindtap="showList">查看订单列表</button>

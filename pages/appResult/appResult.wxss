@@ -1,0 +1,24 @@
+/* pages/appResult/appResult.wxss */
+.message{
+  font-size: 50rpx;
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+}
+.moreInfo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.imgView{
+  display:flex;
+  justify-content: center;
+}
+.img{
+  width: 200rpx;
+}
+.btn{
+  background-color:#07C160 ;
+  margin-top: 30rpx;
+  color:white
+}

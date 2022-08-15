@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/appointment/index",
+    "pages/logs/logs",
+    "pages/pets/pets",
+    "pages/personal/personal",
+    "pages/create/create",
+    "pages/appResult/appResult",
+    "pages/inputTel/index",
+    "pages/edit/edit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#EE3D42",
+    "list": [
+      {
+        "pagePath": "pages/pets/pets",
+        "text": "宠物",
+        "iconPath": "tabbar/static/pet_B.png",
+        "selectedIconPath": "tabbar/static/pet_A.png"
+      },
+      {
+        "pagePath": "pages/appointment/index",
+        "text": "预约",
+        "iconPath": "tabbar/static/app_B.png",
+        "selectedIconPath": "tabbar/static/app_A.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "tabbar/static/per_B.png",
+        "selectedIconPath": "tabbar/static/per_A.png"
+      }
+    ]
+  }
+}

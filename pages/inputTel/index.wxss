@@ -1,0 +1,44 @@
+/* pages/inputTel/index.wxss */
+.title{
+  font-weight: bold;
+  font-size: 50rpx;
+  padding: 20rpx;
+  margin: 30rpx;
+  background-color: #ffb41a;
+  border-radius: 30rpx;
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.info{
+  padding: 30rpx;
+  font-size: large;
+}
+.tel{
+  margin:20rpx 30rpx;
+  padding: 10rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+}
+.btn{
+  background-color:#07C160 ;
+  color:white
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.errmsg{
+  color: red;
+  text-align: center;
+}

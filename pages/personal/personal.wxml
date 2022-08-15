@@ -1,0 +1,35 @@
+<!--pages/personal/personal.wxml-->
+<image class="background" src="./static/Card.png" mode="aspectFit">
+
+</image>
+<view class="card">
+  <view class="basicInfo">
+      <image class="myAvatar" src="{{userAvatarUrl}}" mode="aspectFit"></image>
+    <view class="nameAndTel">
+      <view>{{userName}}</view>
+      <view class="tel">{{tel?tel:""}}</view>
+    </view>
+  </view>
+  <button class="getPhoneNum" size="mini" bindtap="getPhoneNumber">{{isStaff?"内部员工":tel?"黄金会员":"会员认证"}}</button>
+  <view wx:if="{{!isStaff}}" class="cardInfo">
+    <text>{{cardType}}</text>
+    <text>剩余{{leftTimes}}次</text>
+  </view>
+</view>
+<view class="apt" wx:for="{{Apts}}" wx:key="AptId" wx:>
+  <text class="leftFill"> </text>
+  <view class="aptRight">
+    <view class="aptTitle">
+      <view>{{item.StartTime+"-"+item.EndTime}}</view>
+      <view>{{item.Status}}</view>
+    </view>
+    <view class="info">宠物：{{item.PetNames}}</view>
+    <view class="info">服务：{{item.Category}}</view>
+    <view class="info" wx:if="{{!isStaff}}">服务人员：{{item.Service}}</view>
+    <view class="info" wx:if="{{isStaff}}">客户昵称：{{item.OwnerName}}</view>
+    <view class="info completeBtn" data-id="{{item.AptId}}" bindtap="complete" wx:if="{{item.Status=='未完成'&&isStaff}}">确认完成</view>
+  </view>
+</view>
+<view class="bottomFill"><text> </text></view>
+
+<tabbar></tabbar>

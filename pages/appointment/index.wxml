@@ -1,0 +1,53 @@
+<myads></myads>
+<view class="subtitle"><text>选择宠物</text></view>
+<scroll-view class="selection"  scroll-x="true" enable-flex="true">
+  <view class="option {{item.selected?'selected':'unselected'}}" wx:for="{{pets}}" wx:key="id" data-id="{{item.id}}" bindtap="changePetSelect">
+    <text>{{item.name}}</text>
+  </view>
+</scroll-view>
+
+<view class="separator"><text> </text></view>
+<view class="subtitle"><text>预约日期</text></view>
+<scroll-view class="selection schSelection"  scroll-x="true" enable-flex="true">
+  <view class="option schOption {{item.selected?'selected':'unselected'}}" wx:for="{{days}}" wx:key="text" data-text="{{item.text}}" bindtap="changeDaySelect">
+    <view>{{item.text}}</view>
+    <view>{{item.text2}}</view>
+  </view>
+</scroll-view>
+
+<view class="separator"><text> </text></view>
+<view class="subtitle"><text>预约技师</text></view>
+<scroll-view class="selection" scroll-x="true" enable-flex="true">
+  <view class="option {{item.selected?'selected':'unselected'}}" wx:for="{{categories}}" wx:key="text" data-text="{{item.text}}" bindtap="changeCatSelect">
+    <text>{{item.text}}</text>
+  </view>
+</scroll-view>
+<scroll-view class="selection" scroll-x="true" enable-flex="true">
+  <view class="option {{item.selected?'selected':'unselected'}}" wx:for="{{services}}" wx:key="text" data-text="{{item.text}}" bindtap="changeSrvSelect">
+    <text>{{item.text}}</text>
+  </view>
+</scroll-view>
+
+<view class="separator"><text> </text></view>
+<view class="subtitle"><text>预约时段</text></view>
+<scroll-view class="selection schSelection" scroll-x="true" enable-flex="true">
+  <view class="option schOption {{item.selected?'selected':'unselected'}}" wx:for="{{schedules}}" wx:key="text" data-text="{{item.text}}" bindtap="changeSchSelect">
+    <view>{{item.text}}</view>
+    <view>{{item.leftSrv}}剩余</view>
+  </view>
+</scroll-view>
+
+<view class="separator"><text> </text></view>
+<view class="subtitle"><text>备注</text></view>
+<view class="note">
+  <input model:value="{{note}}" type="text"/>
+</view>
+<view>
+  <button class="btn" style="background-color: #07C160;color: white;" bindtap="apt">预定</button>
+</view>
+{{testDisplay}}
+<view class="errmsg">
+  {{errmsg}}
+</view>
+<view class="bottomFiller"><text> </text></view>
+<tabbar></tabbar>

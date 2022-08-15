@@ -1,0 +1,26 @@
+/* pages/pets/pets.wxss */
+.createBtn{
+  background-color:#07C160;
+  color: white;
+}
+.petList{
+  padding: 30rpx;
+}
+.petSlot{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 100rpx;
+  font-size: larger;
+  border-bottom: #ccc solid 3rpx;
+  align-items: center;
+}
+.detail{
+  font-size: medium;
+  color:#888;
+  margin-left: 50rpx;
+}
+#operations{
+  font-size: medium;
+  color:#888;
+}

@@ -1,0 +1,24 @@
+<!--pages/inputTel/index.wxml-->
+
+<view class="title">
+  <text>会员认证</text>
+</view>
+<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image class="avatar" src="{{avatarUrl}}"></image>
+</button> 
+{{avatarUrl}}
+<view class="tel">
+  <input bindinput="inputName" type="nickname" placeholder="请输入昵称"/>
+</view>
+<view class="tel">
+  <input bindinput="inputTel" type="text" placeholder="常用电话"/>
+</view>
+<view class="info">
+  请输入手机号和昵称，便于我们联系您，如果您曾经注册本店会员卡，请填写注册手机号，便于我们同步会员卡次数数据。
+</view>
+<button class="btn" bindtap="submitTel">
+  认证
+</button>
+<view class="errmsg">
+  {{errmsg}}
+</view>

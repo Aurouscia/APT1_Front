@@ -1,0 +1,17 @@
+<!--pages/pets/pets.wxml-->
+
+<my_ads></my_ads>
+<view class="petList">
+  <view class="petSlot" wx:key="id" wx:for="{{petsDisplays}}">
+    <view>
+      <text data-id="{{item.id}}">{{item.name}}</text>
+      <text class="detail">{{item.var?item.var:""}}</text>
+    </view>
+    <view id="operations">
+      <text data-id="{{item.id}}" bindtap="editPet">编辑 </text>
+      <text data-id="{{item.id}}" bindtap="removePet">移除</text>
+    </view>
+  </view>
+</view>
+<button class="createBtn" bindtap="createPet">新建宠物</button>
+<tabbar></tabbar>

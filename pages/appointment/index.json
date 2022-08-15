@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabbar":"../../tabbar",
+    "myads":"../../ads_apt"
+  },
+  "navigationBarTitleText": "预约"
+}

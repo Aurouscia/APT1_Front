@@ -1,0 +1,56 @@
+<!--pages/pets/create.wxml-->
+<view class="master">
+  <view class="subtitle">
+    宠物类别
+  </view>
+  <scroll-view class="selection"  scroll-x="true" enable-flex="true">
+    <view class="option {{spc==0?'selected':'unselected'}}" bindtap="changeSpcSelect" data-value="0">
+      <text>猫猫</text>
+    </view>
+    <view class="option {{spc==1?'selected':'unselected'}}" bindtap="changeSpcSelect" data-value="1">
+      <text>狗狗</text>
+    </view>
+  </scroll-view>
+  <view class="separator"></view>
+  <view class="subtitle">
+    宠物性别
+  </view>
+  <scroll-view class="selection"  scroll-x="true" enable-flex="true">
+    <view class="option {{sex==1?'selected':'unselected'}}" bindtap="changeSexSelect" data-value="1">
+      <text>男生</text>
+    </view>
+    <view class="option {{sex==0?'selected':'unselected'}}" bindtap="changeSexSelect" data-value="0">
+      <text>女生</text>
+    </view>
+  </scroll-view>
+  <view class="separator"></view>
+  <view class="subtitle">
+    是否绝育
+  </view>
+  <scroll-view class="selection"  scroll-x="true" enable-flex="true">
+    <view class="option {{str==0?'selected':'unselected'}}" bindtap="changeStrSelect" data-value="0">
+      <text>否</text>
+    </view>
+    <view class="option {{str==1?'selected':'unselected'}}" bindtap="changeStrSelect" data-value="1">
+      <text>是</text>
+    </view>
+  </scroll-view>
+  <view class="separator"></view>
+  <view class="subtitle">
+    名字
+  </view>
+  <view class="note">
+    <input  type="text" id="name" bindinput="inputName"/>
+  </view>
+  <view class="separator"></view>
+  <view class="subtitle">
+    品种
+  </view>
+  <view class="note">
+    <input type="text" id="name" bindinput="inputVar"/>
+  </view>
+</view>
+<button class="btn" bindtap="createPet">创建</button>
+<view class="errmsg">
+{{errmsg}}
+</view>

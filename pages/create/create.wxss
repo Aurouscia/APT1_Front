@@ -1,0 +1,59 @@
+/* pages/pets/create.wxss */
+
+.subtitle{
+  padding:20rpx 20rpx 0rpx 20rpx;
+  font-size: large;
+  font-weight: bold;
+  color:#666
+}
+
+.separator{
+  height: 20rpx;
+  background-color: #eee;
+}
+.selection{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+  padding-left: 30rpx;
+}
+.option{
+  padding: 20rpx;
+  margin: 15rpx 10rpx;
+  border-radius: 15rpx;
+  color:white;
+  white-space: nowrap;
+  height: 40rpx;
+  font-size: 30rpx;
+}
+.selected{
+  background-color:#07C160; 
+  border: #07C160 1rpx solid;
+}
+.unselected{
+  background-color: white;
+  border: #ccc 1rpx solid;
+  color:#888
+}
+.errmsg{
+  color: red;
+  text-align: center;
+}
+.bottomFiller{
+  height: 300rpx;
+}
+.btn{
+  background-color:#07C160 ;
+  color:white
+}
+.note{
+  margin:20rpx 30rpx;
+  padding: 10rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+  width: 300rpx;
+}
+.master{
+  height: 80%;
+}

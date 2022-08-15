@@ -1,0 +1,86 @@
+/* pages/personal/personal.wxss */
+.card{
+  height: 450rpx;
+  margin: 20rpx 20rpx 0rpx 20rpx;
+}
+.myAvatar{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 30rpx;
+  border-radius: 50rpx;
+}
+.avatarWrapper{
+  background-color: #ffb41a;
+  width:20rpx;
+  padding: 0rpx;
+  margin: 0rpx;
+}
+.basicInfo{
+  padding-left: 7%;
+  padding-top: 15%;
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+.getPhoneNum{
+  margin-left: 66.5%;
+  margin-top: 7%;
+  color:#ffb41a
+}
+.cardInfo{
+  padding-left:8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  font-size: large;
+}
+.apt{
+  margin: 0rpx 20rpx 20rpx 20rpx;
+  background-color: #eee;
+  color:black;
+  display: flex;
+  height: 350rpx;
+}
+.aptTitle{
+  font-size: large;
+  font-weight: bold;
+  border-bottom: #888 solid 5rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.aptRight{
+  margin: 20rpx;
+  width: 100%;
+}
+.leftFill{
+  background-color: #ffb41a;
+  width: 10rpx;
+}
+.info{
+  padding-top: 20rpx;
+  color:#555
+}
+.completeBtn{
+  color: #ffb41a;
+  width: 200rpx;
+}
+
+.bottomFill{
+  height: 300rpx;
+}
+.tel{
+  font-weight: lighter;
+  font-size: small;
+}
+
+.background{
+  width: 95%;
+  height: 450rpx;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  z-index: -100;
+}
